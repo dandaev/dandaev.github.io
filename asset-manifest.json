@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.609819b7.chunk.js",
+    "main.js.map": "/static/js/main.609819b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a495d95e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a495d95e.js.map",
+    "static/js/2.978b77d7.chunk.js": "/static/js/2.978b77d7.chunk.js",
+    "static/js/2.978b77d7.chunk.js.map": "/static/js/2.978b77d7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.978b77d7.chunk.js.LICENSE.txt": "/static/js/2.978b77d7.chunk.js.LICENSE.txt",
+    "static/media/NormZwickau-HighResolution.fc7f1952.jpg": "/static/media/NormZwickau-HighResolution.fc7f1952.jpg",
+    "static/media/backOceanBottom.5e7fe545.svg": "/static/media/backOceanBottom.5e7fe545.svg",
+    "static/media/backOceanMid.44b00e1d.svg": "/static/media/backOceanMid.44b00e1d.svg",
+    "static/media/backOceanTop.e1adb28d.svg": "/static/media/backOceanTop.e1adb28d.svg",
+    "static/media/backRipple.a9622b92.svg": "/static/media/backRipple.a9622b92.svg",
+    "static/media/cloud1.deebc7b5.png": "/static/media/cloud1.deebc7b5.png",
+    "static/media/cloud2.d30b116b.png": "/static/media/cloud2.d30b116b.png",
+    "static/media/cloud3.9328a85b.png": "/static/media/cloud3.9328a85b.png",
+    "static/media/cloud4.d6d2482c.png": "/static/media/cloud4.d6d2482c.png",
+    "static/media/cloud5.2b00aa33.png": "/static/media/cloud5.2b00aa33.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a495d95e.js",
+    "static/js/2.978b77d7.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.609819b7.chunk.js"
+  ]
+}
