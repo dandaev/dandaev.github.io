@@ -928,9 +928,9 @@ main {
 .timeline-item:not(:last-child) { margin-bottom: 20px; }
 
 .timeline-item-title {
-  font-size: var(--fs-6);
-  line-height: 1.3;
-  margin-bottom: 7px;
+  color: var(--white-2);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-400);
 }
 
 .timeline-list span {
@@ -963,6 +963,7 @@ main {
 
 .timeline-text {
   color: var(--light-gray);
+  font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -2305,5 +2306,138 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (max-width: 580px) {
   .hobbies-list {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Update modal quote icon styles */
+.modal-quote-icon {
+  font-size: 26px;
+  color: var(--orange-yellow-crayola);
+  margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+/* For light theme */
+.light-theme .modal-quote-icon {
+  color: var(--accent-light);
+}
+
+/* Remove old image styles */
+.modal-img-wrapper > img {
+  display: none;
+}
+
+.modal-connection-info {
+  color: var(--light-gray-70);
+  font-size: 12px !important;
+  opacity: 0.7;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.modal-connection-info ion-icon {
+  font-size: 14px !important;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.light-theme .modal-connection-info {
+  color: var(--light-gray-light);
+  opacity: 0.7;
+}
+
+.timeline-text ion-icon {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+  color: var(--light-gray-70);
+}
+
+.timeline-text strong {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-6);
+  opacity: 1;
+}
+
+.light-theme .timeline-text strong {
+  color: var(--accent-light);
+}
+
+.timeline-text br {
+  margin-bottom: 5px;
+}
+
+/* Уменьшаем и делаем светлее текст с местоположением */
+.timeline-text ion-icon[name="location-outline"] {
+  font-size: 14px;
+  color: var(--light-gray-70);
+  opacity: 0.8;
+}
+
+.timeline-text .location-text {
+  font-size: var(--fs-8);
+  color: var(--light-gray-70);
+  opacity: 0.8;
+  display: inline-block; /* Чтобы текст оставался в одной линии с иконкой */
+}
+
+/* Стили для обертки местоположения */
+.location-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.timeline-text ion-icon[name="location-outline"] {
+  font-size: 14px;
+  color: var(--light-gray-70);
+  opacity: 0.8;
+}
+
+.timeline-text .location-text {
+  font-size: var(--fs-8);
+  color: var(--light-gray-70);
+  opacity: 0.8;
+  display: inline-block; /* Чтобы текст оставался в одной линии с иконкой */
+}
+
+/* Добавляем стиль для текста технологий */
+.timeline-text .stack-items {
+  color: var(--white-2);
+  font-weight: var(--fw-400);
+}
+
+.light-theme .timeline-text .stack-items {
+  color: var(--white-1-light);
+}
+
+/* Обновляем стили для контейнера стека */
+.stack-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.timeline-text strong {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-6);
+  opacity: 1;
+  white-space: nowrap; /* Предотвращаем перенос слова Stack */
+}
+
+.timeline-text .stack-items {
+  color: var(--white-2);
+  font-weight: var(--fw-400);
+  display: inline;
+}
+
+/* Скрываем иконку цитаты на маленьких экранах */
+@media (max-width: 580px) {
+  .modal-quote-icon {
+    display: none;
   }
 }

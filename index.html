@@ -23,6 +23,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!--
+    - font awesome link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -176,7 +181,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link disabled>Resume</button>
+            <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
@@ -324,12 +329,18 @@
                 <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+              <div class="modal-quote-icon">
+                <i class="fas fa-quote-right"></i>
+              </div>
             </div>
 
             <div class="modal-content">
-
               <h4 class="h3 modal-title" data-modal-title>Bekzhan Satarov</h4>
+
+              <p class="modal-connection-info">
+                <ion-icon name="people-outline"></ion-icon>
+                Former colleague at ONOI Software GmbH & University classmate
+              </p>
 
               <time datetime="2021-06-14">11 March, 2021</time>
 
@@ -338,7 +349,6 @@
                   Excellent teammate with a leading skills. Really responsible and hardworking co-worker. We worked in same company and studied together.
                 </p>
               </div>
-
             </div>
 
           </section>
@@ -504,61 +514,78 @@
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="briefcase-outline"></ion-icon>
             </div>
 
             <h3 class="h3">Experience</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Creative director</h4>
-
-              <span>2015 — Present</span>
-
+              <h4 class="h4 timeline-item-title">Developer & Software Engineer, 2peaches GmbH</h4>
+              <span>07/2024 — Present</span>
               <p class="timeline-text">
-                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
-                molestias
-                exceptur.
+                <span class="location-wrapper">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span class="location-text">Reichenbach im Vogtland, Saxony</span>
+                </span><br>
+                • Extending Xml project functionality by integrating Compose into it<br>
+                • Supporting existing android apps, from adding new features and fixing bugs, to uploading new versions<br>
+                • Participating in the development of a new application using Kotlin Multiplatform<br><br>
+                <strong>Stack:</strong> <span class="stack-items">Kotlin, Jetpack Compose, KMP, Java, Room, SQLDelight</span>
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Art director</h4>
-
-              <span>2013 — 2015</span>
-
+              <h4 class="h4 timeline-item-title">Final thesis in mobile development, Develappers GmbH</h4>
+              <span>08/2023 — 02/2024</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <span class="location-wrapper">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span class="location-text">Dresden, Saxony</span>
+                </span><br>
+                • Conducted analysis of speech recognition and synthesis technologies for offline functionality<br>
+                • Investigated optimization of large language models for mobile devices<br>
+                • Developed a prototype with voice control using Jetpack Compose<br><br>
+                <strong>Stack:</strong> <span class="stack-items">Kotlin, Jetpack Compose, Tensorflow Lite, Google Colab</span>
               </p>
-
             </li>
 
             <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web designer</h4>
-
-              <span>2010 — 2013</span>
-
+              <h4 class="h4 timeline-item-title">Working student in Android development, flatexDEGIRO AG</h4>
+              <span>03/2022 — 02/2023</span>
               <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
+                <span class="location-wrapper">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span class="location-text">Zwickau, Saxony</span>
+                </span><br>
+                • Maintained Flatex Android app through bug fixes and new feature integration<br>
+                • Conducted code analysis and refactoring to improve maintainability<br>
+                • Engineered custom Android UI components for project's library<br>
+                • Researched Android architectures and evaluated Jetpack Compose<br><br>
+                <strong>Stack:</strong> <span class="stack-items">Java, Kotlin, Jetpack Compose, Agile(Kanban)</span>
               </p>
-
             </li>
 
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Intern in Android development, 2peaches GmbH</h4>
+              <span>08/2021 — 02/2022</span>
+              <p class="timeline-text">
+                <span class="location-wrapper">
+                  <ion-icon name="location-outline"></ion-icon>
+                  <span class="location-text">Reichenbach im Vogtland, Saxony</span>
+                </span><br>
+                • Developed and maintained company's Android projects (e.g. Disco2App)<br>
+                • Managed APK distribution across platforms<br>
+                • Provided real-time bug resolutions under tight deadlines<br>
+                • Led enterprise projects using Flutter and Laravel<br>
+                • Integrated NFC technology into applications<br><br>
+                <strong>Stack:</strong> <span class="stack-items">Java, Kotlin, Jetpack Compose, Laravel, Flutter, Realm, Retrofit, NFC</span>
+              </p>
+            </li>
           </ol>
-
         </section>
 
         <section class="skill">
