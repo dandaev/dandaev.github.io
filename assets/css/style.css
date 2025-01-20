@@ -455,8 +455,11 @@ main {
   padding-bottom: 10px;
 }
 
-.avatar-box > img {
-  border-radius: 50%;
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
 }
 
 .info-content .name {
