@@ -46,6 +46,8 @@ const overlay = document.querySelector("[data-overlay]");
 const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
+const modalConnection = document.querySelector("[data-modal-connection]");
+const modalDate = document.querySelector("[data-modal-date]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -55,18 +57,27 @@ const testimonialsModalFunc = function () {
 
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
-
   testimonialsItem[i].addEventListener("click", function () {
-
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    
+    const connection = this.dataset.connection || "Former colleague";
+    const date = this.dataset.date || "2021-06-14";
+    
+    modalConnection.innerHTML = `
+      <ion-icon name="people-outline"></ion-icon>
+      ${connection}
+    `;
+    modalDate.textContent = new Date(date).toLocaleDateString('en-US', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric'
+    });
 
     testimonialsModalFunc();
-
   });
-
 }
 
 // add click event to modal close button
