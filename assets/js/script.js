@@ -48,6 +48,7 @@ const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 const modalConnection = document.querySelector("[data-modal-connection]");
 const modalDate = document.querySelector("[data-modal-date]");
+const modalLinks = document.querySelector("[data-modal-links]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
@@ -62,9 +63,21 @@ for (let i = 0; i < testimonialsItem.length; i++) {
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-    
+
+    const linkedinLink = this.dataset.linkedin || "#";
     const connection = this.dataset.connection || "Former colleague";
     const date = this.dataset.date || "2021-06-14";
+    
+    if(linkedinLink !== "#") {
+      modalLinks.innerHTML = `
+        <a href="${linkedinLink}" target="_blank" class="modal-link" title="LinkedIn">
+          <ion-icon name="logo-linkedin" class="modal-icon-linkedin"></ion-icon>
+        </a>`;
+    }
+    // modalLinks.innerHTML = `
+    //   <a href="${linkedinLink}" target="_blank" class="modal-link" title="LinkedIn">
+    //     <ion-icon name="logo-linkedin"></ion-icon>
+    //   </a>`;
     
     modalConnection.innerHTML = `
       <ion-icon name="people-outline"></ion-icon>
